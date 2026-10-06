@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Choice Cafe Denpasar - Restoran Makanan Sehat & Healthy Club Bali</title>
+    <meta name="description"
+        content="D'Choice Cafe - Cafe makanan sehat & healthy club di Denpasar, Bali. Menyediakan Dalgona Protein Coffee, Pittaya Protein Bowl, Choco Dot Waffle, Green Smoothie, dan menu rendah kalori lainnya. Rating 4.9 dari 47 ulasan.">
+    <meta name="keywords"
+        content="DChoice Cafe, Cafe Sehat Denpasar, Healthy Food Denpasar, Protein Bowl Bali, Protein Waffle, Green Smoothie, Restoran Makanan Sehat Bali">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="D'Choice Cafe Denpasar - Cafe & Restoran Makanan Sehat">
+    <meta property="og:description"
+        content="Kreasi menu sehat rendah kalori & tinggi protein yang enak dan bikin ketagihan di Denpasar Bali. Rating 4.9 ⭐">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dchoicecafe.com">
+
+    <!-- Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span class="pulse-dot"></span>
+                <span id="liveStatusText">Buka Hari Ini · 08.00 - 00.00 WITA</span>
+                <span class="divider">|</span>
+                <span class="location-badge">📍 Denpasar Utara, Bali</span>
+            </div>
+            <div class="top-bar-right">
+                <span>⭐ <strong>4,9</strong> / 5.0 (47 Ulasan Google)</span>
+                <span class="divider">|</span>
+                <a href="tel:081338736063" class="top-phone">📞 0813-3873-6063</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="navbar-header" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">🌿</div>
+                <div class="logo-text">
+                    <span class="brand-name">D'Choice <span class="accent-text">Cafe</span></span>
+                    <span class="brand-tagline">HEALTHY CLUB & RESTO</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">Beranda</a>
+                <a href="#layanan" class="nav-link">Layanan</a>
+                <a href="#menu" class="nav-link">Menu Sehat</a>
+                <a href="#kalkulator" class="nav-link">Kalkulator Nutrisi</a>
+                <a href="#ulasan" class="nav-link">Ulasan (4.9★)</a>
+                <a href="#galeri" class="nav-link">Galeri</a>
+                <a href="#lokasi" class="nav-link">Lokasi & Jam</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-trigger-btn" id="openCartBtn" aria-label="Buka Keranjang Pesanan">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-label">Pesanan</span>
+                    <span class="cart-badge" id="cartBadgeCount">0</span>
+                </button>
+                <a href="https://wa.me/6281338736063?text=Halo%20D'Choice%20Cafe,%20saya%20ingin%20bertanya%20mengenai%20menu%20dan%20reservasi"
+                    target="_blank" rel="noopener" class="btn btn-emerald">
+                    <span>💬 WhatsApp</span>
+                </a>
+                <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Menu Navigasi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge-wrap">
+                    <span class="hero-badge">💚 Klub Sehat & Cafe Favorit Denpasar</span>
+                    <span class="hero-price-badge">Rp 50.000 – 75.000 / orang</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Kreasi Menu Rendah Kalori, <span class="text-gradient">Tinggi Protein</span> & Tetap Lezat!
+                </h1>
+
+                <p class="hero-description">
+                    Selamat datang di <strong>D'Choice Cafe</strong> — tempat nongkrong nyaman dengan aneka pilihan menu
+                    sehat, protein waffle, smoothie bowl, dan minuman stamina bergizi untuk mendukung gaya hidup sehat
+                    Anda.
+                </p>
+
+                <div class="hero-features-list">
+                    <div class="hero-feature-item">
+                        <span class="feature-icon">✨</span>
+                        <span>4.9 Stars Google Maps</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <span class="feature-icon">💪</span>
+                        <span>Menu Tinggi Protein</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <span class="feature-icon">🌙</span>
+                        <span>Buka s/d 00.00 WITA</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#menu" class="btn btn-primary btn-lg">
+                        <span>📖 Lihat Menu & Pesan</span>
+                    </a>
+                    <a href="#kalkulator" class="btn btn-glass btn-lg">
+                        <span>📊 Hitung Target Protein</span>
+                    </a>
+                </div>
+
+                <!-- Google Rating Card Floating -->
+                <div class="google-rating-card">
+                    <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                    <div class="rating-score">4,9 <span class="rating-count">(47 Ulasan Google)</span></div>
+                    <div class="rating-quotes">"Menu sehat dengan suasana cafe yg nyaman & kreasi menu rendah kalori"
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card-stack">
+                    <div class="hero-main-card">
+                        <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80"
+                            alt="Pittaya Protein Bowl DChoice Cafe" class="hero-img">
+                        <div class="hero-card-overlay">
+                            <span class="tag-badge">🔥 Best Seller</span>
+                            <h3>Pittaya Protein Bowl</h3>
+                            <p>Dragon fruit, protein blend, fresh kiwi & chia seeds</p>
+                            <div class="card-meta">
+                                <span class="meta-price">Rp 45.000</span>
+                                <span class="meta-macro">22g Protein • 240 Kcal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Badge 1 -->
+                    <div class="hero-floating-card float-1">
+                        <div class="float-icon">☕</div>
+                        <div class="float-info">
+                            <strong>Dalgona Protein Coffee</strong>
+                            <span>Popular Healthy Drink</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Mini Badge 2 -->
+                    <div class="hero-floating-card float-2">
+                        <div class="float-icon">🧇</div>
+                        <div class="float-info">
+                            <strong>Choco Dot Protein Waffle</strong>
+                            <span>Low Calorie & Crispy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE MODE BANNER -->
+    <section id="layanan" class="service-modes-section">
+        <div class="container">
+            <div class="service-cards-grid">
+                <div class="service-card" id="modeDineIn">
+                    <div class="service-icon">🍽️</div>
+                    <div class="service-details">
+                        <h3>Makan di tempat</h3>
+                        <p>Suasana cafe nyaman, cocok untuk santai, wfh, atau kumpul sehat bersama teman.</p>
+                    </div>
+                    <span class="service-status active-tag">Tersedia</span>
+                </div>
+                <div class="service-card" id="modeTakeaway">
+                    <div class="service-icon">🛍️</div>
+                    <div class="service-details">
+                        <h3>Bawa pulang</h3>
+                        <p>Kemasan higienis, aman, dan siap dinikmati di mana saja saat beraktivitas.</p>
+                    </div>
+                    <span class="service-status active-tag">Tersedia</span>
+                </div>
+                <div class="service-card" id="modeDelivery">
+                    <div class="service-icon">🛵</div>
+                    <div class="service-details">
+                        <h3>Pesan antar</h3>
+                        <p>Pengiriman cepat langsung ke rumah atau kantor area Denpasar & sekitarnya.</p>
+                    </div>
+                    <span class="service-status active-tag">Tersedia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUTRITION CALCULATOR & RECOMMENDATION WIDGET -->
+    <section id="kalkulator" class="calculator-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-sub">⚡ Interactive Fitness Tool</span>
+                <h2 class="section-title">Kalkulator Kebutuhan Protein & Menu Rekomendasi</h2>
+                <p class="section-desc">Hitung estimasi kebutuhan protein harian Anda dan dapatkan rekomendasi kombinasi
+                    menu D'Choice Cafe yang pas!</p>
+            </div>
+
+            <div class="calc-wrapper">
+                <div class="calc-form-card">
+                    <form id="proteinCalcForm" onsubmit="event.preventDefault(); calculateProtein();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userWeight">Berat Badan (kg)</label>
+                                <input type="number" id="userWeight" placeholder="Contoh: 65" min="30" max="200"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="userGoal">Target Kesehatan / Fitnes</label>
+                                <select id="userGoal" required>
+                                    <option value="weightloss">Penurunan Berat Badan (Low Cal, High Protein)</option>
+                                    <option value="maintain" selected>Menjaga Berat & Gaya Hidup Sehat</option>
+                                    <option value="musclegain">Pembentukan Otot & Peningkatan Berat</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userActivity">Tingkat Aktivitas Harian</label>
+                            <select id="userActivity">
+                                <option value="light">Ringan (Kerja Kantoran / Jarang Olahraga)</option>
+                                <option value="moderate" selected>Sedang (Olahraga 2-3x Seminggu)</option>
+                                <option value="active">Aktif (Olahraga Rutin / Kerja Fisik)</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>🔍 Hitung & Dapatkan Rekomendasi Menu</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="calc-result-card" id="calcResultCard">
+                    <div class="calc-placeholder" id="calcPlaceholder">
+                        <div class="placeholder-icon">🧮</div>
+                        <h4>Masukkan Data Anda</h4>
+                        <p>Isi form di samping untuk melihat estimasi kebutuhan protein dan kombinasi menu yang
+                            direkomendasikan.</p>
+                    </div>
+
+                    <div class="calc-output hidden" id="calcOutput">
+                        <div class="target-header">
+                            <span class="target-label">Target Protein Harian Anda:</span>
+                            <div class="target-val" id="targetProteinVal">0 g</div>
+                        </div>
+
+                        <div class="recommendation-box">
+                            <h5>💡 Rekomendasi Paket Menu D'Choice Cafe:</h5>
+                            <div class="rec-menu-item" id="recMenuItem">
+                                <!-- Dynamic JS recommendation -->
+                            </div>
+                            <button id="addRecToCartBtn" class="btn btn-emerald btn-full mt-3">
+                                ➕ Tambahkan Paket Rekomendasi Ini ke Pesanan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-content">
+                    <span class="section-sub">🍃 Fresh & Nutritious</span>
+                    <h2 class="section-title">Menu & Sorotan Utama</h2>
+                    <p class="section-desc">Nikmati racikan makanan & minuman sehat dengan bahan berkualitas tinggi,
+                        rendah kalori, dan bebas rasa bersalah.</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="menu-search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="menuSearchInput" placeholder="Cari menu... (misal: Protein, Waffle, Dalgona)"
+                        oninput="filterMenu()">
+                </div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="menu-categories" id="categoryFilters">
+                <button class="cat-btn active" data-category="all">Semua Menu</button>
+                <button class="cat-btn" data-category="protein-drink">☕ Protein Coffee & Drink</button>
+                <button class="cat-btn" data-category="smoothie-bowl">🥣 Smoothie & Bowls</button>
+                <button class="cat-btn" data-category="waffle">🧇 Protein Waffles</button>
+                <button class="cat-btn" data-category="tea">🍵 Green & Herbal Tea</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu Items loaded dynamically via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="ulasan" class="reviews-section">
+        <div class="container">
+            <div class="reviews-header-block">
+                <div class="reviews-summary-left">
+                    <span class="section-sub">💬 Google Maps Verified Reviews</span>
+                    <h2 class="section-title">Apa Kata Pengunjung D'Choice Cafe?</h2>
+                    <p class="section-desc">Kepercayaan pelanggan adalah kebanggaan kami. D'Choice Cafe mendapatkan
+                        rating <strong>4.9 dari 5 bintang</strong> berdasarkan 47 ulasan Google.</p>
+
+                    <div class="big-rating-box">
+                        <div class="big-score">4,9</div>
+                        <div class="rating-info">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <span class="review-total">47 ulasan Google Maps</span>
+                            <span class="price-info-tag">Rp 50.000–75.000 per orang</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-action-right">
+                    <button class="btn btn-outline-emerald" onclick="openReviewModal()">
+                        ✍️ Tulis Ulasan Pengunjung
+                    </button>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-glass">
+                        📍 Lihat di Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Review Tag Cloud Filter (Directly from prompt) -->
+            <div class="review-tags-container">
+                <span class="tags-label">Kata kunci populer:</span>
+                <button class="tag-btn active" onclick="filterReviews('all')">Semua</button>
+                <button class="tag-btn" onclick="filterReviews('badan')">badan (3)</button>
+                <button class="tag-btn" onclick="filterReviews('protein')">protein (3)</button>
+                <button class="tag-btn" onclick="filterReviews('berat')">berat (2)</button>
+                <button class="tag-btn" onclick="filterReviews('tinggi')">tinggi (2)</button>
+                <button class="tag-btn" onclick="filterReviews('waffle')">waffle (2)</button>
+                <button class="tag-btn" onclick="filterReviews('gaya hidup')">gaya hidup (2)</button>
+                <button class="tag-btn" onclick="filterReviews('smoothie')">smoothie (2)</button>
+            </div>
+
+            <!-- Reviews Cards Grid -->
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Diva Christy Review -->
+                <div class="review-card" data-tags="badan,protein,berat,gaya hidup">
+                    <div class="reviewer-header">
+                        <div class="avatar avatar-1">D</div>
+                        <div class="reviewer-meta">
+                            <h4 class="reviewer-name">diva christy</h4>
+                            <span class="reviewer-sub">5 ulasan · 3 foto • setahun lalu</span>
+                        </div>
+                        <span class="google-badge">G</span>
+                    </div>
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Selalu suka sama kreasi menu yg rendah kalori tapi tetap enak dan bikin ketagihan😘"
+                    </p>
+                    <div class="review-meta-chips">
+                        <span class="chip">Makan di tempat</span>
+                        <span class="chip">Rendah Kalori</span>
+                    </div>
+
+                    <!-- Owner Response -->
+                    <div class="owner-reply">
+                        <div class="reply-header">
+                            <strong>Tanggapan dari pemilik</strong>
+                            <span>10 bulan lalu</span>
+                        </div>
+                        <p class="reply-text">
+                            "Terima kasih atas kepercayaan dan dukungan Anda! Ulasan seperti ini memberi kami semangat
+                            untuk terus menghadirkan makanan sehat yang lezat dan bergizi. Sampai jumpa lagi di D’Choice
+                            Cafe 💚 Sehat slalu ya kak 🤗"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pika Widiantari Review -->
+                <div class="review-card" data-tags="waffle,smoothie,gaya hidup">
+                    <div class="reviewer-header">
+                        <div class="avatar avatar-2">P</div>
+                        <div class="reviewer-meta">
+                            <h4 class="reviewer-name">Pika Widiantari</h4>
+                            <span class="reviewer-sub">2 ulasan · 1 foto • 10 bulan lalu</span>
+                        </div>
+                        <span class="google-badge">G</span>
+                    </div>
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Tempatnya nyaman, menunya banyak dan enak semuaa🫶🫶🫶"
+                    </p>
+                    <div class="review-meta-chips">
+                        <span class="chip">Makanan: 5/5</span>
+                        <span class="chip">Suasana: 5/5</span>
+                    </div>
+
+                    <!-- Owner Response -->
+                    <div class="owner-reply">
+                        <div class="reply-header">
+                            <strong>Tanggapan dari pemilik</strong>
+                            <span>10 bulan lalu</span>
+                        </div>
+                        <p class="reply-text">
+                            "Terima kasih ulasan positifnya 😍 Ulasan anda sangat bermanfaat untuk menjaga kualitas
+                            layanan kami. Kami sangat menghargainya. Salam sehat slalu."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Akhmad Saidi Review -->
+                <div class="review-card" data-tags="badan,tinggi,gaya hidup">
+                    <div class="reviewer-header">
+                        <div class="avatar avatar-3">A</div>
+                        <div class="reviewer-meta">
+                            <h4 class="reviewer-name">Akhmad Saidi</h4>
+                            <span class="reviewer-sub">6 ulasan · 10 foto • setahun lalu</span>
+                        </div>
+                        <span class="google-badge">G</span>
+                    </div>
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Menu sehat dengan suasana cafe yg nyaman"
+                    </p>
+                    <div class="review-meta-chips">
+                        <span class="chip">Jenis pesanan: Makan di tempat</span>
+                    </div>
+
+                    <!-- Owner Response -->
+                    <div class="owner-reply">
+                        <div class="reply-header">
+                            <strong>Tanggapan dari pemilik</strong>
+                            <span>10 bulan lalu</span>
+                        </div>
+                        <p class="reply-text">
+                            "Terima kasih atas ulasan 5⭐! Kami sangat menghargainya dan senang Anda menikmati pengalaman
+                            sehat di D’Choice Cafe 🌿"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="galeri" class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-sub">📷 Suasana & Sajian</span>
+                <h2 class="section-title">Foto & Video D'Choice Cafe</h2>
+                <p class="section-desc">Intip suasana cafe yang tenang, estetis, dan sajian sehat berwarna-warni yang
+                    menggugah selera.</p>
+            </div>
+
+            <div class="gallery-tabs">
+                <button class="g-tab active" onclick="filterGallery('all')">Semua</button>
+                <button class="g-tab" onclick="filterGallery('menu')">Menu</button>
+                <button class="g-tab" onclick="filterGallery('suasana')">Suasana Cafe</button>
+                <button class="g-tab" onclick="filterGallery('wafel')">Wafel & Smoothie</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item g-menu g-wafel">
+                    <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80"
+                        alt="Pittaya Bowl" loading="lazy">
+                    <div class="g-overlay">
+                        <span>Pittaya Protein Bowl</span>
+                    </div>
+                </div>
+                <div class="gallery-item g-suasana">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80"
+                        alt="Suasana Cafe" loading="lazy">
+                    <div class="g-overlay">
+                        <span>Suasana Cafe Nyaman</span>
+                    </div>
+                </div>
+                <div class="gallery-item g-menu">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80"
+                        alt="Dalgona Coffee" loading="lazy">
+                    <div class="g-overlay">
+                        <span>Dalgona Protein Coffee</span>
+                    </div>
+                </div>
+                <div class="gallery-item g-wafel">
+                    <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=600&q=80"
+                        alt="Choco Dot Waffle" loading="lazy">
+                    <div class="g-overlay">
+                        <span>Choco Dot Protein Waffle</span>
+                    </div>
+                </div>
+                <div class="gallery-item g-menu">
+                    <img src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&w=600&q=80"
+                        alt="Green Smoothie" loading="lazy">
+                    <div class="g-overlay">
+                        <span>Green Detox Smoothie</span>
+                    </div>
+                </div>
+                <div class="gallery-item g-suasana">
+                    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80"
+                        alt="Corner Seat" loading="lazy">
+                    <div class="g-overlay">
+                        <span>Sudut Santai Cafe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & HOURS SECTION -->
+    <section id="lokasi" class="location-section">
+        <div class="container">
+            <div class="location-grid">
+                <!-- Location Details Left -->
+                <div class="location-info-card">
+                    <span class="section-sub">📍 Alamat Lengkap & Kontak</span>
+                    <h2 class="section-title">Temukan Kami di Denpasar Utara</h2>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-icon">🏢</span>
+                            <div>
+                                <strong>Alamat Pertokoan:</strong>
+                                <p>Pertokoan Hokiland #8, Jalan Gatot Subroto 888, Pemecutan Kaja, Denpasar Utara, Kota
+                                    Denpasar, Bali 80111</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">🗺️</span>
+                            <div>
+                                <strong>Plus Code Google Maps:</strong>
+                                <p><code>9664+FR Pemecutan Kaja, Kota Denpasar, Bali</code></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">⏰</span>
+                            <div>
+                                <strong>Jam Operasional:</strong>
+                                <p id="operatingHoursDetail">
+                                    <span class="badge-status open" id="hoursBadge">🟢 Buka Sekarang</span><br>
+                                    Setiap Hari: 08.00 – 00.00 WITA (Tutup jam 12 malam)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div>
+                                <strong>Telepon / WhatsApp:</strong>
+                                <p><a href="tel:081338736063" class="phone-link">0813-3873-6063</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">💵</span>
+                            <div>
+                                <strong>Kisaran Harga:</strong>
+                                <p>Rp 50.000 – Rp 75.000 per orang <span class="sub-text">(Berdasarkan 17 laporan
+                                        pengunjung)</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-action-btns">
+                        <a href="https://maps.google.com/?q=Pertokoan+Hokiland+8+Jalan+Gatot+Subroto+888+Denpasar+Bali"
+                            target="_blank" rel="noopener" class="btn btn-primary">
+                            <span>🧭 Rute ke Cafe (Google Maps)</span>
+                        </a>
+                        <a href="tel:081338736063" class="btn btn-outline-emerald">
+                            <span>📞 Hubungi Cafe</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Map Embedded Right -->
+                <div class="location-map-wrap">
+                    <iframe title="D'Choice Cafe Location Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.5!2d115.2!3d-8.63!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzcnNDguMCJTIDExNcKwMTInMDAuMCJF!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid"
+                        width="100%" height="100%" style="border:0; min-height: 420px; border-radius: 20px;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEARBY PLACES & SEARCH SUGGESTIONS -->
+    <section class="nearby-section">
+        <div class="container">
+            <h4 class="nearby-title">🔍 Orang Lain Juga Menelusuri di Denpasar:</h4>
+            <div class="nearby-chips">
+                <span class="n-chip">Juice Talk CAFE Bali (4,3★)</span>
+                <span class="n-chip">D'CHOICE Toko Pakaian (5,0★)</span>
+                <span class="n-chip">Healthy Choice Toko Organik (5,0★)</span>
+                <span class="n-chip">Dapur Lokal Bali (4,1★)</span>
+                <span class="n-chip">KACE Coffee and Eatery (5,0★)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo footer-logo">
+                    <div class="logo-icon">🌿</div>
+                    <div class="logo-text">
+                        <span class="brand-name">D'Choice <span class="accent-text">Cafe</span></span>
+                        <span class="brand-tagline">HEALTHY CLUB DENPASAR</span>
+                    </div>
+                </a>
+                <p class="footer-about">
+                    Klub Sehat & Restoran Makanan Sehat favorit area Denpasar, Bali. Menyajikan kreasi rendah kalori dan
+                    tinggi protein yang lezat dan bikin ketagihan.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">📸 Instagram</a>
+                    <a href="https://wa.me/6281338736063" target="_blank" aria-label="WhatsApp">💬 WhatsApp</a>
+                    <a href="https://bit.ly" target="_blank" aria-label="Website Link">🔗 bit.ly</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigasi Cepat</h4>
+                <ul>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#layanan">Pilihan Layanan</a></li>
+                    <li><a href="#menu">Menu Sehat & Harga</a></li>
+                    <li><a href="#kalkulator">Kalkulator Protein</a></li>
+                    <li><a href="#ulasan">Ulasan Pengunjung</a></li>
+                    <li><a href="#lokasi">Petunjuk Rute & Jam</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h4>Jam Buka Cafe</h4>
+                <p><strong>Senin - Minggu:</strong><br>08.00 - 00.00 WITA</p>
+                <p class="footer-note">💡 Buka setiap hari hingga jam 12 malam. Melayani Makan di Tempat, Bawa Pulang, &
+                    Delivery WhatsApp.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>© 2026 D'Choice Cafe Denpasar. Hak Cipta Dilindungi.</p>
+                <p>Pertokoan Hokiland #8, Jl. Gatot Subroto 888, Denpasar Utara, Bali.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART SLIDE-OUT DRAWER -->
+    <div class="cart-drawer-backdrop" id="cartBackdrop" onclick="closeCart()"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h3>🛒 Pesanan Saya</h3>
+            <button class="close-drawer-btn" onclick="closeCart()" aria-label="Tutup Keranjang">&times;</button>
+        </div>
+
+        <div class="drawer-service-selector">
+            <label><strong>Pilih Jenis Pesanan:</strong></label>
+            <div class="service-radios">
+                <label class="radio-label">
+                    <input type="radio" name="orderServiceType" value="Makan di tempat" checked
+                        onchange="updateCartSummary()">
+                    <span>🍽️ Dine-In</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="orderServiceType" value="Bawa pulang" onchange="updateCartSummary()">
+                    <span>🛍️ Takeaway</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="orderServiceType" value="Pesan antar" onchange="updateCartSummary()">
+                    <span>🛵 Delivery</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="drawer-items-list" id="cartItemsList">
+            <!-- Dynamic Cart Items -->
+            <div class="cart-empty">
+                <span class="empty-icon">🥗</span>
+                <p>Keranjang pesanan Anda masih kosong.</p>
+                <small>Silakan pilih menu sehat favorit Anda!</small>
+            </div>
+        </div>
+
+        <div class="drawer-footer" id="cartFooter">
+            <div class="macro-summary-bar">
+                <div class="macro-box">
+                    <span>Total Protein</span>
+                    <strong id="totalProteinSum">0 g</strong>
+                </div>
+                <div class="macro-box">
+                    <span>Est. Kalori</span>
+                    <strong id="totalCalorieSum">0 Kcal</strong>
+                </div>
+            </div>
+
+            <div class="total-price-row">
+                <span>Total Biaya:</span>
+                <strong class="total-amount" id="cartTotalAmount">Rp 0</strong>
+            </div>
+
+            <div class="customer-info-form">
+                <input type="text" id="custName" placeholder="Nama Anda" class="form-input" required>
+                <textarea id="custNotes" placeholder="Catatan Tambahan (misal: Kurangi gula / jam jemput / alamat)"
+                    class="form-textarea" rows="2"></textarea>
+            </div>
+
+            <button class="btn btn-emerald btn-full btn-lg" onclick="checkoutWhatsApp()">
+                📲 Kirim Pesanan ke WhatsApp Cafe
+            </button>
+        </div>
+    </aside>
+
+    <!-- WRITE REVIEW MODAL -->
+    <div class="modal-backdrop" id="reviewModal" onclick="closeReviewModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3>✍️ Tulis Ulasan D'Choice Cafe</h3>
+                <button class="modal-close" onclick="closeReviewModal()">&times;</button>
+            </div>
+            <form id="newReviewForm" onsubmit="submitUserReview(event)">
+                <div class="form-group">
+                    <label for="revName">Nama Anda</label>
+                    <input type="text" id="revName" placeholder="Masukkan nama..." required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Rating Pengalaman Anda</label>
+                    <div class="star-picker" id="starPicker">
+                        <span onclick="setRating(1)">★</span>
+                        <span onclick="setRating(2)">★</span>
+                        <span onclick="setRating(3)">★</span>
+                        <span onclick="setRating(4)">★</span>
+                        <span onclick="setRating(5)" class="active">★</span>
+                    </div>
+                    <input type="hidden" id="revRating" value="5">
+                </div>
+                <div class="form-group">
+                    <label for="revComment">Ulasan Anda</label>
+                    <textarea id="revComment" rows="3" placeholder="Bagaimana rasa makanan & suasana di D'Choice Cafe?"
+                        required class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Kirim Ulasan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
